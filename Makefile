@@ -1,2 +1,2 @@
 default:
-	python3 src/__init__.py --verbose --output /home/skemp/SeniorResearch/debug
+	python3 mugen.py --verbose --output /home/skemp/SeniorResearch/debug

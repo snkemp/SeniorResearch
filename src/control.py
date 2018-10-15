@@ -1,111 +1,113 @@
-#! usr/bin/env/ python3
+"""
+"""
 
-import os, re, sys
-from argparse import ArgumentParser
+import json
 
-from machine import Network
-from music import Album
+from src.machine import Network
+from src.music import Collection
 
-class Interpreter(ArgumentParser):
+class Manager():
 
-    WELCOME = '\n\t\t---  MuGen  ---\n'
-    GOODBYE = '\nEnd -'
+    """ Manages musicians and machines
 
-    ALBUM = 'album.json'
-    NETWORK = 'network.h5'
-
+    """
 
     def __init__(self, args):
-        super().__init__()
+        """ Create a network to handle machine learning and a collection to handle musical data """
 
         self.args = args
-        if self.args.verbose:
-            print(Interpreter.WELCOME)
-
-        self.add_argument('command')
-
-        # compose
-        self.add_argument('--key', '-k', nargs=1, default='C')
-        self.add_argument('--count', '-c', nargs=1, default='1')
-        self.add_argument('--style', '-s', nargs=1, default='toh-kay')
-        self.add_argument('args', nargs='*', default='')
-
-        self.album = Album()
         self.network = Network()
+        self.collection = Collection()
 
-    def __iter__(self):
-        return self
-
-
-    def __next__(self):
-        print('>', end=' ')
-        command = input()
-        if re.match('exit|quit|q|Q', command):
-            raise StopIteration
-        self.execute(command)
-        return self
-
-
-    def execute(self, command):
-        command = self.parse_args(command.split(' '))
-
-        if self.args.verbose:
-            print(command)
-
-        try:  # get function by name and call it
-            func =  getattr(self, command.command)
-            func(command.args)
-
-        except AttributeError:
-            print('No command matches ' + command.command)
+        try:
+            self.load()
         except:
-            print('Something went wrong, nothing was done')
-            raise
+            pass
 
 
-    def save(self, args=None):
-        if self.album:
-            self.album.save(os.path.join(self.args.output, Interpreter.ALBUM))
-            if self.args.verbose:
-                print('Saved compositions')
-
-
-        if self.network:
-            self.network.save(os.path.join(self.args.output, Interpreter.NETWORK))
-            if self.args.verbose:
-                print('Saved network model weights')
-
-
-    def load(self, args=None):
-        self.album.load(os.path.join(self.args.output, Interpreter.ALBUM))
-        if self.args.verbose:
-            print('Loaded compositions')
-
-        self.network.load(os.path.join(self.args.output, Interpreter.NETWORK))
-        if self.args.verbose:
-            print('Loaded trained network')
-
-
-    def compose(self, args=None):
-
-        self.album.add(self.convert(self.network.compose(self.args)))
-        if self.args.verbose:
-            print('Composition written and added to album')
-
-
-    def train(self, args=None):
-
-        self.network.train(self.args)
-        if self.args.verbose:
-            print('Network trained on data')
-
-
-    def print(self, args='Nothing to print'):
+    def execute(self, *args):
         print(args)
 
-    def exit(self, msg=None):
-        if self.args.verbose:
-            print(msg or Interpreter.GOODBYE)
 
-        sys.exit(0)
+    def make(self, *args):
+        self.load()
+        self.train()
+        self.compose()
+        self.save()
+
+    def create(self, style='toh-kay', *args):
+        """ Create files for us to store data in, note this will overwrite data """
+
+        style = style.lower()
+
+        network = open('%s.h5' % style, 'x+')
+        network.write('')
+        network.close()
+
+        collection = open('%s.json' % style, 'x+')
+        collection.write('{}')
+        collection.close()
+
+        try:  # We expect this to fail, however it is important our manager knows what style to save so we can save it again later
+            self.load(style)
+        except:
+            pass
+
+        self.save()
+
+
+
+    def load(self, style='toh-kay', *args):
+        """ Have our network and collection load the given style """
+
+        style = style.lower()
+        self.collection.load(style)
+        self.network.load(style)
+
+
+
+    def save(self):
+        """ Have our network and collection save their progress """
+
+        self.collection.save()
+        self.network.save()
+
+
+
+    def train(self):
+        """ Train the network on the compositions """
+        self.verbose('Training...')
+
+        scores = self.collection.compositions()
+        self.network.train(scores)
+
+
+
+    def compose(self):
+        """ Compose """
+        self.network.compose()
+
+
+    def quit(self, *args):
+        """ For user and internal use. Quit """
+        raise StopIteration
+
+
+    def exit(self, msg='', *args):
+        """ For internal use only, quit after printing some kind of message """
+        print(msg)
+        self.quit()
+
+
+
+    def verbose(self, *args):
+        """ Print a message if user wants us to print helpful status messages """
+        if self.args.verbose:
+            for msg in args:
+                print(msg)
+
+
+    def error(self, msg, *args):
+        print('Error: %s' % msg)
+
 

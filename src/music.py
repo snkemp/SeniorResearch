@@ -1,22 +1,45 @@
-#! usr/bin/env python3
+"""
+"""
 
-class Album():
+import os, json, glob
+import music21 as mu
 
-    def __init__(self, data=None):
-        self.compositions = []
+class Collection():
 
-    def add(self, composition, args):
-        self.compositions.append((composition, args))
+    """ A collection of music
+    """
 
-    def add(self, args=None):
-        return
+    def __init__(self):
+        """ Initialize
+        """
 
-    def save(self, args=None):
-        open(args, 'w').write(str(self))
+        self.album = {}
+        self.style = 'default'
 
-    def load(self, args=None):
-        self.compositions = open(args, 'r').read()
+    def load(self, style):
+        self.style = style
+        self.album = json.load(open('%s.json' % self.style, 'r'))
 
-    def __str__(self):
-        return '[' + ','.join(self.compositions) + ']'
+    def save(self):
+        json.dump(self.album, open('%s.json' % self.style, 'w'))
 
+    def compositions(self):
+        files = glob.glob('data/%s/*.mid' % self.style)
+
+        scores = []
+        for f in files:
+            sc = mu.converter.parse(f)
+            score = mu.stream.Score()
+
+            for p in sc.parts:
+                if p.partName in ('Guitar', 'Voice'):
+                    score.append(p.flat)
+
+            scores.append(score)
+
+
+        return scores
+
+
+    def add(self, score):
+        pass

@@ -1,0 +1,101 @@
+<beg>
+<music21.chord.Chord C F>
+<music21.chord.Chord G C E>
+<music21.chord.Chord C F>
+<music21.chord.Chord G C E>
+<music21.chord.Chord B G D>
+<music21.chord.Chord G C E>
+<music21.chord.Chord B G D>
+<music21.chord.Chord A C E>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.note.Note G>
+<music21.chord.Chord B G D>
+<music21.note.Rest rest>
+<music21.chord.Chord B G D>
+<music21.note.Rest rest>
+<music21.chord.Chord C F>
+<music21.chord.Chord C F>
+<music21.chord.Chord C F>
+<music21.chord.Chord C F>
+<music21.chord.Chord C F>
+<music21.chord.Chord C F>
+<music21.chord.Chord G C E>
+<music21.chord.Chord B D>
+<music21.note.Rest rest>
+<music21.note.Note G>
+<music21.note.Rest rest>
+<music21.chord.Chord C F>
+<music21.chord.Chord G C E>
+<music21.chord.Chord C F>
+<music21.chord.Chord G C E>
+<music21.chord.Chord C F>
+<music21.chord.Chord B F>
+<music21.chord.Chord C F>
+<music21.chord.Chord B F>
+<music21.chord.Chord C F>
+<music21.chord.Chord B F>
+<music21.chord.Chord B F>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord A F>
+<music21.chord.Chord A F>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G C E>
+<music21.note.Rest rest>
+<music21.chord.Chord G B C E>
+<music21.note.Note C>
+<music21.chord.Chord B G D>
+<music21.note.Note G>
+<music21.chord.Chord G C E>
+<music21.chord.Chord G B C E>
+<music21.chord.Chord B G D>
+<music21.note.Note G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord G C E>
+<music21.chord.Chord B G D>
+<music21.chord.Chord G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
+<music21.chord.Chord B G D>
