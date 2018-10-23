@@ -13,6 +13,8 @@ from keras.layers import Input, Dense, Activation, LSTM, TimeDistributed, Flatte
 from itertools import groupby, zip_longest
 import music21 as mu
 
+from src.concepts import conceptualize
+
 class Network():
 
     """ A network that has a model
@@ -41,17 +43,14 @@ class Network():
     def save(self):
         self.model.save_weights('%s.h5' % self.style)
 
-    def clean(self, note):
-        if isinstance(note, mu.chord.Chord):
-            note =  mu.chord.Chord(set(note.pitchNames))
-            #note = note.pitchedCommonName
-
-        return str(note)
-
     def train(self, compositions):
 
-        self.corpus |= { self.clean(note) for score in compositions for part in score for note in part }
-        self.timing |= { str(note.duration) for score in compositions for part in score for note in part }
+        compositions = conceptualize(compositions)
+        print('\n'.join(map(str, compositions)), file=open('output.concepts.txt', 'w'))
+        return
+
+        self.corpus |= { note for score in compositions for part in score for note in part }
+        self.timing |= { note.duration for score in compositions for part in score for note in part }
 
 
         # IDEA add some corpus like walking up the scale or the current chord
