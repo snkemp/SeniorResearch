@@ -25,13 +25,7 @@ class Collection():
 
     def compositions(self):
         files = glob.glob('data/%s/*.mid' % self.style)
-
-        scores = []
-        for f in files:
-            score = mu.converter.parse(f)
-            #score = mu.stream.Score([ part for part in sc.parts if part.partName in ('Guitar', 'Voice', 'Saxiphone') ])
-            scores.append(score)
-
+        scores = [ mu.converter.parse(f) for f in files ]
         return scores
 
 

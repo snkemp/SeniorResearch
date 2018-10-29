@@ -89,6 +89,7 @@ class Manager():
 
 
     def print(self):
+        self.verbose('Printing...')
         with open('debug/concepts/%s.txt'%self.network.style, 'w') as f:
             print( ('#'*80).join( map(str, self.network.opus) ), file=f )
 

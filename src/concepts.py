@@ -2,7 +2,9 @@
 A file to help create musical concepts.
 
 """
+
 import json
+import music21 as mu
 
 class Concept():
 
@@ -23,7 +25,7 @@ class Concept():
         return self.index
 
     def __str__(self):
-        return '<mugen.src.concept ' + ', '.join( map(str, self()) )
+        return '<Concept ' + ', '.join( map(str, self()) ) + ' >'
 
     def __repr__(self):
         return "Concept:\n\t\t" + "\n\t\t".join( map(str, self()) )
@@ -70,48 +72,49 @@ class Field():
     def __init__(self, part):
 
         # Disjoint set
-        notes = [Concept.BEGINNING] + [ Concept(note, i) for i, note in enumerate(part.notesAndRests) ] + [Concept.END]
-        indices = {}
+        notes = [Concept.BEGINNING] + [ Concept(note, i+1) for i, note in enumerate(part.notesAndRests) ] + [Concept.END]
 
         # Save indices of each note into a dict
+        indices = {}
         for note in notes[1:-2]:
-            if str(note) not in indices:
-                indices[str(note)] = list()
-            indices[str(note)].append(int(note))
+            if note not in indices:
+                indices[note] = list()
+            indices[note].append(int(note))
 
         # For each type of note
-        for ix in indices:
+        for concept in indices:
 
             # Ignore unique notes
-            if len(indices[ix]) <= 1:
+            if len(indices[concept]) <= 1 or isinstance(concept.note, mu.note.Rest):
                 continue
 
             # Store indices of each kind of successive note
             jndices = {}
-            for note in map(lambda i: notes[i+1], indices[ix]):
-                 if str(note) not in jndices:
-                     jndices[str(note)] = list()
-                 jndices[str(note)].append(int(note))
+            for ix in indices[concept]:
+                note = notes[ix+1]
+                if note not in jndices:
+                    jndices[note] = list()
+                jndices[note].append(int(note))
 
             # Ignore notes that always goto the same note
-            if len(jndices) <= 1:
-                continue
+            # if len(jndices) <= 1:
+            #     continue
 
-            # Mark most common instance of successive note (ignore only one)
-            most = max(jndices, key=lambda x: len(jndices[x]))
+            # Mark most common instance of successive note
+            most_common = max(jndices, key=lambda c: len(jndices[c]))
 
             # Each note with respective successive note should be combined later
-            for jx in jndices[most]:
+            for jx in jndices[most_common]:
                 notes[jx-1].child = True
 
 
-        # Create concepts from our
+        # Group concepts
         self.concepts = [ notes[0] ]
-        for i in range(1, len(notes)):
+        for note in notes[1:]:
             if self.concepts[-1].child:
-                self.concepts[-1] += notes[i]
+                self.concepts[-1] += note
             else:
-                self.concepts.append(notes[i])
+                self.concepts.append(note)
 
 
     def __str__(self):

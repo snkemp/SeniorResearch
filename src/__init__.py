@@ -6,7 +6,6 @@ from argparse import ArgumentParser
 from src.control import Manager
 
 
-
 class UserInterface(ArgumentParser):
 
     """ User Interface

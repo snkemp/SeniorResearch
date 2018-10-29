@@ -6,43 +6,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -50,43 +39,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -100,13 +78,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -114,43 +90,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -158,7 +123,6 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -170,23 +134,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -198,23 +158,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -226,23 +182,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -252,11 +204,8 @@ Composition:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -268,27 +217,21 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -334,7 +277,6 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -344,17 +286,12 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note A>
@@ -368,7 +305,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
@@ -376,7 +312,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -384,7 +319,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C#>
@@ -396,33 +330,26 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
@@ -430,13 +357,11 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
@@ -444,17 +369,14 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
@@ -468,43 +390,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -512,43 +423,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -562,13 +462,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -576,43 +474,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -620,7 +507,6 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -632,23 +518,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -660,23 +542,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -688,23 +566,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -722,7 +596,6 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -736,29 +609,21 @@ Composition:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Rest rest>
@@ -770,7 +635,6 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -784,23 +648,16 @@ Composition:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
@@ -812,43 +669,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -856,43 +702,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -906,13 +741,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -920,43 +753,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -969,43 +791,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1013,43 +824,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1063,13 +863,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -1077,43 +875,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1121,7 +908,6 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1129,13 +915,11 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1143,13 +927,11 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1157,13 +939,11 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1173,11 +953,8 @@ Composition:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -1189,27 +966,21 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -1255,7 +1026,6 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1265,17 +1035,12 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note A>
@@ -1289,7 +1054,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
@@ -1297,7 +1061,6 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Rest rest>
@@ -1309,7 +1072,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1317,29 +1079,22 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1353,43 +1108,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1397,43 +1141,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1447,13 +1180,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -1461,43 +1192,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1505,7 +1225,6 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1513,13 +1232,11 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1527,13 +1244,11 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1541,13 +1256,11 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1565,7 +1278,6 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1579,27 +1291,20 @@ Composition:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
@@ -1613,7 +1318,6 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -1627,71 +1331,53 @@ Composition:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1699,43 +1385,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1749,13 +1424,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -1763,43 +1436,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1812,43 +1474,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1856,43 +1507,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1906,13 +1546,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -1920,43 +1558,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -1970,17 +1597,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -1994,17 +1616,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2018,17 +1635,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2040,25 +1652,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2070,27 +1676,20 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2112,7 +1711,6 @@ Composition:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
@@ -2126,7 +1724,6 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note G>
@@ -2146,17 +1743,12 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note A>
@@ -2170,7 +1762,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
@@ -2178,7 +1769,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2186,25 +1776,20 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
@@ -2216,7 +1801,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2224,7 +1808,6 @@ Composition:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
@@ -2248,43 +1831,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -2292,43 +1864,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -2342,13 +1903,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2356,43 +1915,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -2406,17 +1954,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2430,17 +1973,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2454,17 +1992,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2476,15 +2009,12 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2492,19 +2022,14 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
@@ -2512,23 +2037,16 @@ Composition:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
@@ -2540,19 +2058,14 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
@@ -2560,71 +2073,52 @@ Composition:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -2632,43 +2126,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -2682,13 +2165,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2696,43 +2177,32 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
@@ -2745,41 +2215,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -2789,41 +2248,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -2839,13 +2287,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2853,41 +2299,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -2903,17 +2338,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2927,17 +2357,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2951,17 +2376,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -2973,25 +2393,19 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3003,7 +2417,6 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3011,19 +2424,14 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note B>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3045,17 +2453,13 @@ Composition:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3069,7 +2473,6 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -3087,9 +2490,7 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
@@ -3097,13 +2498,10 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Rest rest>
@@ -3111,7 +2509,6 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
@@ -3121,15 +2518,12 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3149,7 +2543,6 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
@@ -3159,7 +2552,6 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
@@ -3177,41 +2569,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -3221,41 +2602,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -3271,13 +2641,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3285,41 +2653,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -3335,17 +2692,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3359,17 +2711,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3383,17 +2730,12 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3405,15 +2747,12 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note G>
-	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3421,35 +2760,25 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
@@ -3463,41 +2792,30 @@ Composition:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Note B>
-	Concept:
 		<music21.note.Note C>
 	Concept:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
@@ -3517,41 +2835,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -3561,41 +2868,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
@@ -3611,13 +2907,11 @@ Composition:
 		<music21.note.Note G>
 	Concept:
 		<music21.note.Note G#>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note F>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note D>
@@ -3625,41 +2919,30 @@ Composition:
 		<music21.note.Rest rest>
 	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note F>
-	Concept:
 		<music21.note.Note E>
 	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
-	Concept:
 		<music21.note.Note A>
 	Concept:
 		<music21.note.Note C>
-	Concept:
 		<music21.note.Note D>
 	Concept:
 		<music21.note.Note C>
