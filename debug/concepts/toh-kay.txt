@@ -3,6 +3,3684 @@ Composition:
 	Concept:
 		BEG
 	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C#>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E->
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		END
+	Field: 
+	Concept:
+		BEG
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		END
+	Field: 
+	Concept:
+		BEG
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F#>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		END
+	Field: 
+	Concept:
+		BEG
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note B>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G>
+	Concept:
+		<music21.note.Note G#>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Rest rest>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note F>
+	Concept:
+		<music21.note.Note E>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note A>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note D>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		<music21.note.Note C>
+	Concept:
+		END
+	Field: 
+	Concept:
+		BEG
+	Concept:
+		END
+	Field: 
+	Concept:
+		BEG
+	Concept:
+		END
+	Field: 
+	Concept:
+		BEG
+	Concept:
 		END
 	Field: 
 	Concept:
