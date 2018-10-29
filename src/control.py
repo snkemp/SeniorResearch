@@ -37,8 +37,8 @@ class Manager():
 
     def create(self, style='toh-kay', *args):
         """ Create files for us to store data in, note this will overwrite data """
-
         style = style.lower()
+        self.verbose('Creating %s...' % style)
 
         network = open('%s.h5' % style, 'x+')
         network.write('')
@@ -59,16 +59,17 @@ class Manager():
 
     def load(self, style='toh-kay', *args):
         """ Have our network and collection load the given style """
-
         style = style.lower()
+        self.verbose('Loading %s...' % style)
+
         self.collection.load(style)
-        self.network.load(style)
+        self.network.load(self.collection)
 
 
 
     def save(self):
         """ Have our network and collection save their progress """
-
+        self.verbose('Saving...')
         self.collection.save()
         self.network.save()
 
@@ -77,15 +78,19 @@ class Manager():
     def train(self):
         """ Train the network on the compositions """
         self.verbose('Training...')
-
-        scores = self.collection.compositions()
-        self.network.train(scores)
-
+        self.network.train()
 
 
     def compose(self):
         """ Compose """
+        self.verbose('Composing...')
         self.network.compose()
+
+
+
+    def print(self):
+        with open('debug/concepts/%s.txt'%self.network.style, 'w') as f:
+            print( ('#'*80).join( map(str, self.network.opus) ), file=f )
 
 
     def quit(self, *args):
@@ -99,15 +104,17 @@ class Manager():
         self.quit()
 
 
-
     def verbose(self, *args):
         """ Print a message if user wants us to print helpful status messages """
-        if self.args.verbose:
+        isdict = isinstance(self.args, dict)
+        if (isdict and self.args['verbose']) or (not isdict and self.args.verbose):
             for msg in args:
                 print(msg)
 
 
     def error(self, msg, *args):
         print('Error: %s' % msg)
+        if args:
+            print(*args)
 
 

@@ -29,14 +29,9 @@ class Collection():
         scores = []
         for f in files:
             sc = mu.converter.parse(f)
-            score = mu.stream.Score()
-
-            for p in sc.parts:
-                if p.partName in ('Guitar', 'Voice'):
-                    score.append(p.flat)
-
+            print([part.partName for part in sc.parts])
+            score = mu.stream.Score([ part for part in sc.parts if part.partName in ('Guitar', 'Voice', None) ])
             scores.append(score)
-
 
         return scores
 

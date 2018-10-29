@@ -3,32 +3,37 @@ A file to help create musical concepts.
 
 """
 import json
-import pprint
-log = pprint.PrettyPrinter(indent=4).pprint
 
 class Concept():
 
     def __init__(self, note, index):
-        self.note = note
         self.index = index
         self.child = False
 
         self.notes = [note]
 
-    def __str__(self):
-        return str(self.note)
 
-    def __repr__(self):
-        return "Concept:\n\t\t" + "\n\t\t".join( map(str, self(1)) ) + " >"
+    @property
+    def note(self):
+        return self.notes[0]
 
-    def __call__(self, *args):
-        if args:
-            return self.notes
 
-        return self.note
 
     def __int__(self):
         return self.index
+
+    def __str__(self):
+        return '<mugen.src.concept ' + ', '.join( map(str, self()) )
+
+    def __repr__(self):
+        return "Concept:\n\t\t" + "\n\t\t".join( map(str, self()) )
+
+
+
+    def __call__(self):
+        return self.notes
+
+
 
     def __bool__(self):
         return self.child
@@ -39,7 +44,19 @@ class Concept():
         return self
 
     def __eq__(self, other):
-        return repr(self) == repr(other)
+        return str(self) == str(other)
+
+    def __lt__(self, other):
+        return str(self) < str(other)
+
+    def __hash__(self):
+        return hash(str(self))
+
+
+Concept.NONE = Concept('NONE', -1)
+Concept.BEGINNING = Concept('BEG', -2)
+Concept.END = Concept('END', -3)
+
 
 
 class Field():
@@ -53,16 +70,15 @@ class Field():
     def __init__(self, part):
 
         # Disjoint set
-        notes = [ Concept(note, i) for i, note in enumerate(part.notesAndRests) ]
+        notes = [Concept.BEGINNING] + [ Concept(note, i) for i, note in enumerate(part.notesAndRests) ] + [Concept.END]
         indices = {}
 
         # Save indices of each note into a dict
-        for note in notes[:-2]:
+        for note in notes[1:-2]:
             if str(note) not in indices:
                 indices[str(note)] = list()
             indices[str(note)].append(int(note))
 
-        log(indices); print()
         # For each type of note
         for ix in indices:
 
@@ -102,6 +118,17 @@ class Field():
         return '\tField: \n\t' + '\n\t'.join(map(repr, self.concepts))
 
 
+    def __iter__(self):
+        return iter(self.concepts)
+
+
+    @property
+    def corpus(self):
+        return set(self.concepts)
+
+    @property
+    def data(self):
+        return self.concepts
 
 
 class Composition():
@@ -111,6 +138,18 @@ class Composition():
 
     def __str__(self):
         return 'Composition:\n' + '\n'.join(map(str, self.fields))
+
+
+    def __iter__(self):
+        return iter(self.fields)
+
+    @property
+    def corpus(self):
+        return set().union(*[field.corpus for field in self])
+
+    @property
+    def data(self):
+        return [ concept for field in self for concept in field ]
 
 
 
