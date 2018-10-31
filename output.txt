@@ -1,298 +1,42 @@
 Concept:
 		BEG
 Concept:
-		<music21.chord.Chord F4 C4 A3 F3 C3 F2>
-		<music21.chord.Chord F4 C4 A3>
-		<music21.chord.Chord F4 C4 A3>
+		<music21.note.Note G>
 Concept:
-		<music21.chord.Chord F4 C4 A3 F3 C3 F2>
-		<music21.chord.Chord F4 C4 A3>
-		<music21.chord.Chord F4 C4 A3>
+		<music21.note.Note G>
 Concept:
-		<music21.chord.Chord F4 C4 A3>
+		<music21.note.Note G>
 Concept:
-		<music21.chord.Chord F4 C4 A3>
+		<music21.note.Note G>
 Concept:
-		<music21.chord.Chord F3 C3 F2>
+		<music21.note.Note G>
 Concept:
-		<music21.chord.Chord F3 C3 F2>
+		<music21.note.Note C>
 Concept:
-		<music21.chord.Chord F3 C3 F2>
+		<music21.note.Note C>
 Concept:
-		<music21.chord.Chord F3 C3 F2>
+		<music21.note.Note C>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Note C>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Note C>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>
 Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
-Concept:
-		<music21.chord.Chord E4 C4 A3>
-		<music21.chord.Chord E4 C4 A3>
+		<music21.note.Rest rest>

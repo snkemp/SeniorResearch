@@ -4,6 +4,7 @@ A file to help create musical concepts.
 """
 
 import json
+import heapq
 import music21 as mu
 
 class Concept():
@@ -19,6 +20,9 @@ class Concept():
     def note(self):
         return self.notes[0]
 
+    @property
+    def merge(self):
+        return self.child and not isinstance(self.note, mu.note.Rest)
 
 
     def __int__(self):
@@ -31,10 +35,8 @@ class Concept():
         return "Concept:\n\t\t" + "\n\t\t".join( map(str, self()) )
 
 
-
     def __call__(self):
         return self.notes
-
 
 
     def __bool__(self):
@@ -59,6 +61,51 @@ Concept.NONE = Concept('NONE', -1)
 Concept.BEGINNING = Concept('BEG', -2)
 Concept.END = Concept('END', -3)
 
+class TableEntry():
+
+    def __init__(self):
+        self.indices = []
+        self.next = {}
+
+    def update(self, concept, next_concept):
+        self.indices.append(int(concept))
+
+        if next_concept not in self.next:
+            self.next[next_concept] = []
+
+        self.next[next_concept].append(int(next_concept))
+
+    def most(self):
+        key = lambda x: len(self.next[x])
+        most_common = max(self.next, key=key)
+        frequency = key(most_common)
+        ratio = .85*frequency
+
+        return [ i for mc in sorted(
+                                filter(lambda x: key(x) > ratio, self.next),
+                                key=key) for i in self.next[mc] ]
+
+
+    def __iter__(self):
+        return iter(self.most())
+
+
+class IndexTable():
+
+    def __init__(self):
+        self.indices = {}
+
+
+    def update(self, concept, next_concept):
+        if concept not in self.indices:
+            self.indices[concept] = TableEntry()
+
+        self.indices[concept].update(concept, next_concept)
+
+
+    def __iter__(self):
+        for concept in self.indices:
+            yield self.indices[concept]
 
 
 class Field():
@@ -75,43 +122,19 @@ class Field():
         notes = [Concept.BEGINNING] + [ Concept(note, i+1) for i, note in enumerate(part.notesAndRests) ] + [Concept.END]
 
         # Save indices of each note into a dict
-        indices = {}
-        for note in notes[1:-2]:
-            if note not in indices:
-                indices[note] = list()
-            indices[note].append(int(note))
+        table = IndexTable()
+        for i in range(1, len(notes)-1):
+            table.update(notes[i], notes[i+1])
 
-        # For each type of note
-        for concept in indices:
 
-            # Ignore unique notes
-            if len(indices[concept]) <= 1 or isinstance(concept.note, mu.note.Rest):
-                continue
-
-            # Store indices of each kind of successive note
-            jndices = {}
-            for ix in indices[concept]:
-                note = notes[ix+1]
-                if note not in jndices:
-                    jndices[note] = list()
-                jndices[note].append(int(note))
-
-            # Ignore notes that always goto the same note
-            # if len(jndices) <= 1:
-            #     continue
-
-            # Mark most common instance of successive note
-            most_common = max(jndices, key=lambda c: len(jndices[c]))
-
-            # Each note with respective successive note should be combined later
-            for jx in jndices[most_common]:
-                notes[jx-1].child = True
-
+        for entry in table:
+            for i in entry:
+                notes[i-1].child = True
 
         # Group concepts
         self.concepts = [ notes[0] ]
         for note in notes[1:]:
-            if self.concepts[-1].child:
+            if self.concepts[-1].merge:
                 self.concepts[-1] += note
             else:
                 self.concepts.append(note)

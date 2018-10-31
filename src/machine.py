@@ -35,7 +35,7 @@ class Network():
         self.model.save_weights('%s.h5' % self.style)
 
 
-    def load(self, collection):
+    def init(self, collection):
         self.style = collection.style
 
         self.opus = conceptualize(collection.compositions())
@@ -59,6 +59,8 @@ class Network():
         self.model.add(Activation('softmax'))
         self.model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
+
+    def load(self):
         try:
             self.model.load_weights('%s.h5' % self.style)
         except:
@@ -74,8 +76,8 @@ class Network():
             data = composition.data
 
             # Sequences to train on
-            self.NUM_SEQ = 20
-            self.SEQ_LENGTH = 1 + len(data) // self.NUM_SEQ
+            self.SEQ_LENGTH = 20
+            self.NUM_SEQ = len(data) // self.SEQ_LENGTH
 
             x_seqs = list(zip_longest( *[iter(data)] * self.NUM_SEQ, fillvalue=Concept.NONE))
             y_seqs = list(zip_longest( *[iter(data[1:])] * self.NUM_SEQ, fillvalue=Concept.NONE))
@@ -85,10 +87,11 @@ class Network():
 
             for i in range(len(x_seqs)):
                 for j in range(self.SEQ_LENGTH):
-                    x[i][j][self.corpus_to_index[ x_seqs[i][j] ] ] = 1
-                    y[i][j][self.corpus_to_index[ y_seqs[i][j] ] ] = 1
+                    x[i][j][ self.corpus_to_index[ x_seqs[i][j] ] ] = 1
+                    y[i][j][ self.corpus_to_index[ y_seqs[i][j] ] ] = 1
 
-            self.model.fit(x,y, verbose=0, epochs=200)
+            print('Data is ready. Fitting to model...')
+            self.model.fit(x,y, verbose=0, epochs=100)
             self.save()
 
 
@@ -96,18 +99,14 @@ class Network():
 
         ix = [ self.corpus_to_index[Concept.BEGINNING] ]
         y_char = [ self.index_to_corpus[ix[-1]] ]
-        x = np.zeros((1,1000,self.CORPUS_SIZE))
+        x = np.zeros((1,self.SEQ_LENGTH,self.CORPUS_SIZE))
 
         try:
-            for i in range(100):
+            for i in range(self.SEQ_LENGTH):
                 x[0,i,:][ix[-1]] = 1
                 pred = self.model.predict(x[:, :i+1, :])[0]
-
-                op = [ (self.index_to_corpus[i], pred[i]) for i in range(len(pred)) ]
-                print((op)); print()
-
+                print(pred)
                 ix = np.argmax(pred, 1)
-                print(ix)
                 y_char.append(self.index_to_corpus[ix[-1]])
 
                 print(y_char[-1], end='')
@@ -118,7 +117,4 @@ class Network():
         print('\n'.join(map(repr, y_char)), file=open('output.txt', 'w'))
         print('\n'.join(map(repr, y_char)) )
         return y_char
-
-
-
 

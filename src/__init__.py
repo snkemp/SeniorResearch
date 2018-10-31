@@ -5,6 +5,9 @@ from traceback import print_exc
 from argparse import ArgumentParser
 from src.control import Manager
 
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
 
 class UserInterface(ArgumentParser):
 
@@ -31,7 +34,7 @@ class UserInterface(ArgumentParser):
     def __next__(self):
         """ Get next command from user and call the appropriate method with the given arguments """
 
-        print('> ', end='')
+        print('\n> ', end='')
 
         try:
             command = [ c.strip() for c in input().split(',') ]

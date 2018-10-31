@@ -3,6 +3,8 @@
 
 import json
 
+import datetime as D
+
 from src.machine import Network
 from src.music import Collection
 
@@ -20,8 +22,9 @@ class Manager():
         self.collection = Collection()
 
         try:
-            self.load()
+            self.init()
         except:
+            print('Something went wrong when initializing, nothing was done')
             pass
 
 
@@ -30,6 +33,7 @@ class Manager():
 
 
     def make(self, *args):
+        self.init()
         self.load()
         self.train()
         self.compose()
@@ -50,21 +54,25 @@ class Manager():
 
         try:  # We expect this to fail, however it is important our manager knows what style to save so we can save it again later
             self.load(style)
-        except:
-            pass
+        except Exception as e:
+            print(e)
 
         self.save()
 
 
 
-    def load(self, style='toh-kay', *args):
+    def init(self, style='toh-kay', *args):
         """ Have our network and collection load the given style """
         style = style.lower()
-        self.verbose('Loading %s...' % style)
+        self.verbose('Initializing %s...' % style)
 
         self.collection.load(style)
-        self.network.load(self.collection)
+        self.network.init(self.collection)
 
+
+    def load(self, *args):
+        self.verbose('Loading weights...')
+        self.network.load()
 
 
     def save(self):
@@ -91,7 +99,7 @@ class Manager():
     def print(self):
         self.verbose('Printing...')
         with open('debug/concepts/%s.txt'%self.network.style, 'w') as f:
-            print( ('#'*80).join( map(str, self.network.opus) ), file=f )
+            print( D.datetime.now().strftime('%d %b %H:%M') + ('#'*80).join( map(str, self.network.opus) ), file=f )
 
 
     def quit(self, *args):
