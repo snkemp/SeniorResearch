@@ -71,50 +71,31 @@ class Network():
 
     def train(self, *args):
 
-        for composition in self.opus:
+        data = [ concept for composition in self.opus for field in composition for concept in field ]
+        x = np.zeroes((len(data)//self.SEQ_LENGTH, self.SEQ_LENGTH, len(self.corpus)))
+        y = np.zeroes((len(data)//self.SEQ_LENGTH, len(self.corpus)))
 
-            data = composition.data
+        for i in range(0, len(data) - self.SEQ_LENGTH):
+            x_seq = data[i: i+self.SEQ_LENGTH]
+            y_seq = data[i+self.SEQ_LENGTH]
 
-            # Sequences to train on
-            self.SEQ_LENGTH = 20
-            self.NUM_SEQ = len(data) // self.SEQ_LENGTH
+            x_seq_ix = [ self.corpus_to_index[d] for d in x_seq ]
+            y_seq_ix = self.corpus_to_index[y_seq]
 
-            x_seqs = list(zip_longest( *[iter(data)] * self.NUM_SEQ, fillvalue=Concept.NONE))
-            y_seqs = list(zip_longest( *[iter(data[1:])] * self.NUM_SEQ, fillvalue=Concept.NONE))
+            for j, ix in enumerate(x_seq_ix):
+                x[i][j][ix] = 1
 
-            x = np.zeros((len(x_seqs), self.SEQ_LENGTH, self.CORPUS_SIZE))
-            y = np.zeros((len(y_seqs), self.SEQ_LENGTH, self.CORPUS_SIZE))
+            y[i][ y_seq_ix ] = 1
 
-            for i in range(len(x_seqs)):
-                for j in range(self.SEQ_LENGTH):
-                    x[i][j][ self.corpus_to_index[ x_seqs[i][j] ] ] = 1
-                    y[i][j][ self.corpus_to_index[ y_seqs[i][j] ] ] = 1
 
-            print('Data is ready. Fitting to model...')
-            self.model.fit(x,y, verbose=0, epochs=100)
-            self.save()
+        self.model.fit(x, y, verbose=1, epochs=100)
+        self.save()
 
 
     def compose(self, *args):
 
-        ix = [ self.corpus_to_index[Concept.BEGINNING] ]
-        y_char = [ self.index_to_corpus[ix[-1]] ]
-        x = np.zeros((1,self.SEQ_LENGTH,self.CORPUS_SIZE))
+        composition = [ Concept.BEGINNING ]
+        for i in range(100):
 
-        try:
-            for i in range(self.SEQ_LENGTH):
-                x[0,i,:][ix[-1]] = 1
-                pred = self.model.predict(x[:, :i+1, :])[0]
-                print(pred)
-                ix = np.argmax(pred, 1)
-                y_char.append(self.index_to_corpus[ix[-1]])
-
-                print(y_char[-1], end='')
-        except KeyboardInterrupt:
-            pass
-
-
-        print('\n'.join(map(repr, y_char)), file=open('output.txt', 'w'))
-        print('\n'.join(map(repr, y_char)) )
-        return y_char
+            ix =
 
