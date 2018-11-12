@@ -1,188 +1,150 @@
 """
-A file to help create musical concepts.
-
 """
 
-import json
-import heapq
+
 import music21 as mu
+from src.music import conceptualize
+import numpy as np
 
-class Concept():
-
-    def __init__(self, note, index):
-        self.index = index
-        self.child = False
-
-        self.notes = [note]
-
-
-    @property
-    def note(self):
-        return self.notes[0]
-
-    @property
-    def merge(self):
-        return self.child and not isinstance(self.note, mu.note.Rest)
-
-
-    def __int__(self):
-        return self.index
-
-    def __str__(self):
-        return '<Concept ' + ', '.join( map(str, self()) ) + ' >'
-
-    def __repr__(self):
-        return "Concept:\n\t\t" + "\n\t\t".join( map(str, self()) )
-
-
-    def __call__(self):
-        return self.notes
-
-
-    def __bool__(self):
-        return self.child
-
-    def __iadd__(self, other):
-        self.notes += other.notes
-        self.child = other.child
-        return self
-
-    def __eq__(self, other):
-        return str(self) == str(other)
-
-    def __lt__(self, other):
-        return str(self) < str(other)
-
-    def __hash__(self):
-        return hash(str(self))
-
-
-Concept.NONE = Concept('NONE', -1)
-Concept.BEGINNING = Concept('BEG', -2)
-Concept.END = Concept('END', -3)
-
-class TableEntry():
-
-    def __init__(self):
-        self.indices = []
-        self.next = {}
-
-    def update(self, concept, next_concept):
-        self.indices.append(int(concept))
-
-        if next_concept not in self.next:
-            self.next[next_concept] = []
-
-        self.next[next_concept].append(int(next_concept))
-
-    def most(self):
-        key = lambda x: len(self.next[x])
-        most_common = max(self.next, key=key)
-        frequency = key(most_common)
-        ratio = .85*frequency
-
-        return [ i for mc in sorted(
-                                filter(lambda x: key(x) > ratio, self.next),
-                                key=key) for i in self.next[mc] ]
-
-
-    def __iter__(self):
-        return iter(self.most())
-
-
-class IndexTable():
-
-    def __init__(self):
-        self.indices = {}
-
-
-    def update(self, concept, next_concept):
-        if concept not in self.indices:
-            self.indices[concept] = TableEntry()
-
-        self.indices[concept].update(concept, next_concept)
-
-
-    def __iter__(self):
-        for concept in self.indices:
-            yield self.indices[concept]
-
-
-class Field():
-    """
-
-    [ 2. 3. 4. 2. 3. 2. 3. 4. 5. 4. 5 ]
-    [ 2.3.4, 2.3, 2.3.4.5, 4.5 ]
-
-    """
-
-    def __init__(self, part):
-
-        # Disjoint set
-        notes = [Concept.BEGINNING] + [ Concept(note, i+1) for i, note in enumerate(part.notesAndRests) ] + [Concept.END]
-
-        # Save indices of each note into a dict
-        table = IndexTable()
-        for i in range(1, len(notes)-1):
-            table.update(notes[i], notes[i+1])
-
-
-        for entry in table:
-            for i in entry:
-                notes[i-1].child = True
-
-        # Group concepts
-        self.concepts = [ notes[0] ]
-        for note in notes[1:]:
-            if self.concepts[-1].merge:
-                self.concepts[-1] += note
-            else:
-                self.concepts.append(note)
-
-
-    def __str__(self):
-        return '\tField: \n\t' + '\n\t'.join(map(repr, self.concepts))
-
-
-    def __iter__(self):
-        return iter(self.concepts)
-
-
-    @property
-    def corpus(self):
-        return set(self.concepts)
-
-    @property
-    def data(self):
-        return self.concepts
-
-
-class Composition():
+class Score():
 
     def __init__(self, score):
-        self.fields = [ Field(part) for part in score.parts ]
+
+        self.fileName = score
+        self.score = mu.converter.parse(score)
+        for part in self.score.parts:
+            key = part.analyze('key')
+
+            if 'minor' in str(key):
+                key = key.relative
+
+            toC = 60 - key.tonic.midi
+            part.transpose(toC, inPlace=True)
+
+
+        self._melody = None
+        self._harmony = None
+
+
+    def getMelodyPart(self):
+        for p in self.score.parts:
+            if p.partName == 'Saxophone':
+                return p
+        return self.score.parts[0]
+
+    def getHarmonyPart(self):
+        return self.score.parts[0]
+
+
+    @property
+    def melody(self):
+        if not self._melody:
+            self._melody = self.getMelodyPart()
+
+        return [ note.pitches for note in self._melody.notes ]
+
+
+    @property
+    def harmony(self):
+        if not self._harmony:
+            self._harmony = self.getHarmonyPart()
+
+        return [ chord.pitches for chord in self._harmony.notes ]
+
 
     def __str__(self):
-        return 'Composition:\n' + '\n'.join(map(str, self.fields))
+        return self.fileName
+
+    def toJSON(self):
+        return str(self)
+
+    def fromJSON(self, string):
+        self.__init__(string)
+        return self
 
 
-    def __iter__(self):
-        return iter(self.fields)
+class Opus():
+
+    def __init__(self, scores):
+        self.scores = [ Score(sc) for sc in scores ]
+
+        self.melodies = [ sc.melody for sc in self.scores ]
+        self.harmonies = [ sc.harmony for sc in self.scores ]
+
+        self.notes = [ pitches[0].pitchClass for melody in self.melodies for pitches in melody ]
+        self.uniqueNotes = sorted(set(self.notes))
+
+        self.chords = [ mu.chord.Chord(pitches).normalOrderString for harmony in self.harmonies for pitches in harmony ]
+        self.uniqueChords = sorted(set(self.chords))
+
+        self.index_to_note = dict(enumerate(self.uniqueNotes))
+        self.note_to_index = { k:i for i,k in enumerate(self.uniqueNotes) }
+
+        self.index_to_chord = dict(enumerate(self.uniqueChords))
+        self.chord_to_index = { k:i for i,k in enumerate(self.uniqueChords) }
+
+        self.concepts = conceptualize(self.scores)
+
+    def toJSON(self):
+        return str(self)
+
+    def fromJSON(self, string):
+        self.__init__(string.split('<?>'))
+        return self
+
+    def __str__(self):
+        return "<?>".join([ sc.toJSON() for sc in self.scores ])
 
     @property
-    def corpus(self):
-        return set().union(*[field.corpus for field in self])
+    def numNotes(self):
+        return len(self.uniqueNotes)
 
     @property
-    def data(self):
-        return [ concept for field in self for concept in field ]
+    def numChords(self):
+        return len(self.uniqueChords)
 
 
 
-def conceptualize(score):
-    """ Converts a score or a list of scores into fields """
+    def clean(self, notes):
 
-    if isinstance(score, list):
-        return [ conceptualize(sc) for sc in score ]
+        composition = [notes[0]]
+        note_name = ('C4', 'C#4', 'D4', 'D#4', 'E4', 'F4', 'F#4', 'G4', 'G#4', 'A4', 'A#4', 'B4', 'C5')
+        for note in notes[1:]:
+            if self.badInterval(composition[-1], note):
+                bridge = self.bridgeInterval(composition[-1], note)
+                print('Bad interval: %d, %d inserting %s' % (composition[-1], note, str(bridge)))
+            else:
+                composition.append(note)
 
-    return Composition(score)
+        score = mu.stream.Score()
+
+        mel = mu.stream.Part()
+        mel.insert(mu.instrument.Trumpet())
+
+        for note in composition:
+            mel.append(mu.note.Note(name=note_name[note]))
+
+
+        har = mu.stream.Part()
+        har.insert(mu.instrument.Guitar())
+
+        score.insert(mel)
+        score.insert(har)
+
+        return score
+
+    def badNote(self, note):
+        return note in (1, 3, 6, 10)
+
+
+    def badInterval(self, fr, to):
+        return fr != to and (self.badNote(fr) or self.badNote(to) or (fr,to) in [(0,11), (11,0)])
+
+
+    def bridgeInterval(self, fr, to):
+        bridges = self.concepts.match(fr, to)
+        if len(bridges) == 0:
+            return self.bridgeInterval(fr, (fr+to)//2) + self.bridgeInterval((fr+to)//2, to)
+        i = np.random.choice(list(range(len(bridges))))
+        return bridges[i]
+

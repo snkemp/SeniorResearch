@@ -49,10 +49,11 @@ class UserInterface(ArgumentParser):
             self.manager.error('We already created that file. Doing so again will delete all our saved data')
 
         except StopIteration:
+            print_exc()
             self.manager.exit('Closing Mugen')
             raise
 
-        except Exception as e:
+        except Exception:
             print_exc()
 
 

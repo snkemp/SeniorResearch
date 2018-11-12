@@ -1,12 +1,13 @@
 """
 """
 
-import json
-
+import os, json, glob
 import datetime as D
 
+from music21.midi import MidiFile
+from music21.midi.translate import streamToMidiFile, midiFileToStream
+
 from src.machine import Network
-from src.music import Collection
 
 class Manager():
 
@@ -19,16 +20,12 @@ class Manager():
 
         self.args = args
         self.network = Network()
-        self.collection = Collection()
-
-        try:
-            self.init()
-        except:
-            print('Something went wrong when initializing, nothing was done')
-            pass
+        self.compositions = []
 
 
     def execute(self, *args):
+        """ Execute python script of args """
+        # TODO
         print(args)
 
 
@@ -40,7 +37,7 @@ class Manager():
         self.save()
 
     def create(self, style='toh-kay', *args):
-        """ Create files for us to store data in, note this will overwrite data """
+        """ Create files for us to store data in, note this might overwrite data """
         style = style.lower()
         self.verbose('Creating %s...' % style)
 
@@ -53,7 +50,7 @@ class Manager():
         collection.close()
 
         try:  # We expect this to fail, however it is important our manager knows what style to save so we can save it again later
-            self.load(style)
+            self.init(style)
         except Exception as e:
             print(e)
 
@@ -62,43 +59,66 @@ class Manager():
 
 
     def init(self, style='toh-kay', *args):
-        """ Have our network and collection load the given style """
-        style = style.lower()
-        self.verbose('Initializing %s...' % style)
+        """ Have our network load and parse data associated with the given style """
+        self.style = style.lower()
+        self.verbose('Initializing %s...' % self.style)
 
-        self.collection.load(style)
-        self.network.init(self.collection)
-
-
-    def load(self, *args):
-        self.verbose('Loading weights...')
-        self.network.load()
+        self.network = Network(self.style)
+        self.network.init(glob.glob('data/%s/*.midi' % self.style))
 
 
-    def save(self):
-        """ Have our network and collection save their progress """
+    def load(self, style='toh-kay', *args):
+        """ Load previously saved data with respect to the given style """
+        self.style = style.lower()
+        self.verbose('Loading %s...' % self.style)
+
+        self.compositions = []
+        for track in glob.glob('ouput/%s/*.midi' % self.style):
+            mf = MidiFile()
+            mf.open(track, attrib='rb')
+            mf.read()
+            self.compositions.append(midiFileToStream(mf))
+
+
+        self.network.load(self.style)
+
+
+    def save(self, *args):
+        """ Save network progress and all compositions """
         self.verbose('Saving...')
-        self.collection.save()
+
+        for i, stream in enumerate(self.compositions):
+            mf = streamToMidiFile(stream)
+            mf.open('output/%s/track%s.midi' % (self.style, i), attrib='wb')
+            mf.write()
+            mf.close()
+
         self.network.save()
 
 
 
-    def train(self):
-        """ Train the network on the compositions """
+    def train(self, n=1, *args):
+        """ Train the network on the compositions n amount of times """
         self.verbose('Training...')
-        self.network.train()
+        for _ in range(int(n)):
+            self.network.train()
 
 
-    def compose(self):
+    def compose(self, length=50, n=1, *args):
         """ Compose """
         self.verbose('Composing...')
-        self.network.compose()
+
+        for _ in range(int(n)):
+            composition = self.network.compose(int(length))
+            self.verbose(composition.analyze('key'), _)
+            self.compositions.append(composition)
 
 
 
-    def print(self):
+    def print(self, *args):
+        """ Internal use for debug purposes """
         self.verbose('Printing...')
-        with open('debug/concepts/%s.txt'%self.network.style, 'w') as f:
+        with open('debug/concepts/%s.txt'%self.style, 'w') as f:
             print( D.datetime.now().strftime('%d %b %H:%M') + ('#'*80).join( map(str, self.network.opus) ), file=f )
 
 

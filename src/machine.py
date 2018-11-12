@@ -7,13 +7,15 @@ import numpy as np
 np.random.seed(73)
 
 from keras.models import Sequential, model_from_json
-from keras.layers import Input, Dense, Activation, LSTM, TimeDistributed, Flatten
+from keras.layers import Input, Dense, Activation, LSTM, TimeDistributed, Flatten, Reshape
 
 
 from itertools import groupby, zip_longest
 import music21 as mu
 
-from src.concepts import conceptualize, Concept
+from src.concepts import Opus
+
+
 
 class Network():
 
@@ -23,79 +25,111 @@ class Network():
     """
 
     def __init__(self, style='default'):
-
         self.style = style
-        self.model = Sequential()
 
-        self.corpus = { Concept.NONE, Concept.BEGINNING, Concept.END }
-        self.index_to_corpus = {}
-        self.corpus_to_index = {}
 
     def save(self):
-        self.model.save_weights('%s.h5' % self.style)
+        with open('data/%s/opus.json' % self.style, 'w') as f:
+            f.write(self.opus.toJSON())
+
+        self.melody.save_weights('%s.melody.h5' % self.style)
+        self.harmony.save_weights('%s.harmony.h5' % self.style)
 
 
     def init(self, collection):
-        self.style = collection.style
-
-        self.opus = conceptualize(collection.compositions())
-
-        self.corpus.update(*[ composition.corpus for composition in self.opus ])
-
-        self.index_to_corpus = dict(enumerate(sorted(self.corpus)))
-        self.corpus_to_index = { k:i for i,k in self.index_to_corpus.items() }
-
-        self.CORPUS_SIZE = len(self.corpus)
-        self.SEQ_LENGTH = 20
-        self.HIDDEN_DIM = 20
-        self.LAYER_NUM = 4
-
-        self.model = Sequential()
-        self.model.add(LSTM(self.HIDDEN_DIM, input_shape=(None, self.CORPUS_SIZE), return_sequences=True))
-        for i in range(self.LAYER_NUM-1):
-            self.model.add(LSTM(self.HIDDEN_DIM, return_sequences=True))
-
-        self.model.add(TimeDistributed(Dense(self.CORPUS_SIZE)))
-        self.model.add(Activation('softmax'))
-        self.model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
+        self.opus = Opus(collection)
+        self.prepare()
 
 
-    def load(self):
+    def prepare(self):
+        HIDDEN_DIM = 500
+        LAYER_NUM = 2
+
+        self.melody = Sequential()
+        self.melody.add(LSTM(HIDDEN_DIM, input_shape=(None, self.opus.numNotes), return_sequences=True))
+        for _ in range(LAYER_NUM):
+            self.melody.add(LSTM(HIDDEN_DIM, return_sequences=True))
+        self.melody.add(TimeDistributed(Dense(self.opus.numNotes)))
+        self.melody.add(Activation('softmax'))
+        self.melody.compile(loss='categorical_crossentropy', optimizer='rmsprop')
+
+        # TODO Harmony
+        self.harmony = Sequential()
+
+    def load(self, style):
+        self.style = style
+
+        with open('data/%s/opus.json' % self.style, 'r') as f:
+            self.opus = Opus([])
+            self.opus.fromJSON(f.read())
+
+        self.prepare()
+
         try:
-            self.model.load_weights('%s.h5' % self.style)
+            self.melody.load_weights('%s.melody.h5' % self.style)
+            self.harmony.load_weights('%s.harmony.h5' % self.style)
         except:
-            print('Could not load weights. Retraining and saving weights')
-            self.train()
-
+            print('There was a problem loading the model weights.')
 
 
     def train(self, *args):
 
-        data = [ concept for composition in self.opus for field in composition for concept in field ]
-        x = np.zeroes((len(data)//self.SEQ_LENGTH, self.SEQ_LENGTH, len(self.corpus)))
-        y = np.zeroes((len(data)//self.SEQ_LENGTH, len(self.corpus)))
+        SEQ_LENGTH = 50
 
-        for i in range(0, len(data) - self.SEQ_LENGTH):
-            x_seq = data[i: i+self.SEQ_LENGTH]
-            y_seq = data[i+self.SEQ_LENGTH]
+        for melody in self.opus.melodies:
+            data = [ pitches[0].pitchClass for pitches in melody ]
+            if len(data) == 0:
+                continue
 
-            x_seq_ix = [ self.corpus_to_index[d] for d in x_seq ]
-            y_seq_ix = self.corpus_to_index[y_seq]
+            x = np.zeros((len(melody)//SEQ_LENGTH, SEQ_LENGTH, self.opus.numNotes))
+            y = np.zeros((len(melody)//SEQ_LENGTH, SEQ_LENGTH, self.opus.numNotes))
 
-            for j, ix in enumerate(x_seq_ix):
-                x[i][j][ix] = 1
+            for i in range(len(melody)//SEQ_LENGTH):
+                x_seq = data[i*SEQ_LENGTH : (i+1)*SEQ_LENGTH]
+                x_seq_ix = [ self.opus.note_to_index[ note ] for note in x_seq ]
 
-            y[i][ y_seq_ix ] = 1
+                y_seq = data[i*SEQ_LENGTH+1 : (i+1)*SEQ_LENGTH + 1]
+                y_seq_ix = [ self.opus.note_to_index[ note ] for note in y_seq ]
 
+                ip_seq = np.zeros((SEQ_LENGTH, self.opus.numNotes))
+                tg_seq = np.zeros((SEQ_LENGTH, self.opus.numNotes))
 
-        self.model.fit(x, y, verbose=1, epochs=100)
+                for j in range(SEQ_LENGTH):
+                    ip_seq[j][ x_seq_ix[j] ] = 1
+                    tg_seq[j][ y_seq_ix[j] ] = 1
+
+                x[i] = ip_seq
+                y[i] = tg_seq
+
+            self.melody.fit(x, y, batch_size=50, verbose=1, epochs=20)
+
         self.save()
 
 
-    def compose(self, *args):
+    def compose(self, length=50, n=1, *args):
+        ix = [ np.random.randint(self.opus.numNotes) ]
+        if ix[-1] in (1, 3, 6, 8, 10, 11):
+            ix[-1] = 0
+        y_char = [ self.opus.index_to_note[ix[-1]] ]
 
-        composition = [ Concept.BEGINNING ]
-        for i in range(100):
+        x = np.zeros((1, length, self.opus.numNotes))
+        for i in range(length):
+            x[0, i, :][ix[-1]] = 1
+            pred = self.melody.predict(x[:, :i+1, :])[0]
 
-            ix =
+            next_prediction = pred[0]
+            sum_probabilities = sum(next_prediction)
+            rand_value = np.random.choice(next_prediction, p=[ _p/sum_probabilities for _p in next_prediction ])
+            jx = np.where(next_prediction == rand_value)
+            ix.append(jx[0][0])
+            y_char.append( self.opus.index_to_note[ix[-1]] )
+
+        with open('output/%s/composition.text' % self.style, 'w') as f:
+            print(y_char, f)
+
+        composition = self.opus.clean(y_char)
+        #composition.show('text')
+        return composition
+
+
 
