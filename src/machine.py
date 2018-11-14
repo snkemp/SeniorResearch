@@ -14,7 +14,7 @@ from itertools import groupby, zip_longest
 import music21 as mu
 
 from src.concepts import Opus
-
+from src.music import Composition
 
 
 class Network():
@@ -106,30 +106,30 @@ class Network():
         self.save()
 
 
+    def generateMelody(self, harmony, melody):
+        ix = []
+        x = np.zeros((len(harmony),50,self.opus.numNotes))
+
+        for i,chord in enumerate(harmony):
+            ix.append(harmony.randomStartingNote(chord))
+            for j in range(50):
+                x[i, j, :][ix[-1]] = 1
+                pred = self.melody.predict(x[:, :j+1, :])[0]
+
+                next_prediction = pred[0]
+                sum_probabilities = sum(next_prediction)
+
+                rand_value = np.random.choice(next_prediction, p=[ _p/sum_probabilities for _p in next_prediction ])
+                jx = np.where(next_prediction == rand_value)
+                ix.append(jx[0][0])
+
+        y = [ self.opus.index_to_note[ix_k] for ix_k in ix ]
+        return y
+
     def compose(self, length=50, n=1, *args):
-        ix = [ np.random.randint(self.opus.numNotes) ]
-        if ix[-1] in (1, 3, 6, 8, 10, 11):
-            ix[-1] = 0
-        y_char = [ self.opus.index_to_note[ix[-1]] ]
+        composition = Composition()
+        return [ composition.compose(self) for _ in range(int(n)) ]
 
-        x = np.zeros((1, length, self.opus.numNotes))
-        for i in range(length):
-            x[0, i, :][ix[-1]] = 1
-            pred = self.melody.predict(x[:, :i+1, :])[0]
-
-            next_prediction = pred[0]
-            sum_probabilities = sum(next_prediction)
-            rand_value = np.random.choice(next_prediction, p=[ _p/sum_probabilities for _p in next_prediction ])
-            jx = np.where(next_prediction == rand_value)
-            ix.append(jx[0][0])
-            y_char.append( self.opus.index_to_note[ix[-1]] )
-
-        with open('output/%s/composition.text' % self.style, 'w') as f:
-            print(y_char, f)
-
-        composition = self.opus.clean(y_char)
-        #composition.show('text')
-        return composition
 
 
 

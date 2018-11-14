@@ -30,9 +30,7 @@ class Manager():
 
 
     def make(self, *args):
-        self.init()
         self.load()
-        self.train()
         self.compose()
         self.save()
 
@@ -109,9 +107,9 @@ class Manager():
         self.verbose('Composing...')
 
         for _ in range(int(n)):
-            composition = self.network.compose(int(length))
-            self.verbose(composition.analyze('key'), _)
-            self.compositions.append(composition)
+            compositions = self.network.compose(int(length))
+            for composition in compositions:
+                self.compositions.append(composition)
 
 
 
