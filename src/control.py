@@ -8,6 +8,7 @@ from music21.midi import MidiFile
 from music21.midi.translate import streamToMidiFile, midiFileToStream
 
 from src.machine import Network
+from src.music import Artist
 
 class Manager():
 
@@ -20,7 +21,7 @@ class Manager():
 
         self.args = args
         self.network = Network()
-        self.compositions = []
+        self.artist = Artist()
 
 
     def execute(self, *args):
@@ -61,63 +62,49 @@ class Manager():
         self.style = style.lower()
         self.verbose('Initializing %s...' % self.style)
 
-        self.network = Network(self.style)
-        self.network.init(glob.glob('data/%s/*.midi' % self.style))
-
+        self.network.init(self.style)
+        self.artist.init(self.style)
 
     def load(self, style='toh-kay', *args):
         """ Load previously saved data with respect to the given style """
         self.style = style.lower()
         self.verbose('Loading %s...' % self.style)
 
-        self.compositions = []
-        for track in glob.glob('ouput/%s/*.midi' % self.style):
-            mf = MidiFile()
-            mf.open(track, attrib='rb')
-            mf.read()
-            self.compositions.append(midiFileToStream(mf))
-
-
         self.network.load(self.style)
+        self.artist.load(self.style)
 
 
     def save(self, *args):
         """ Save network progress and all compositions """
         self.verbose('Saving...')
 
-        for i, stream in enumerate(self.compositions):
-            mf = streamToMidiFile(stream)
-            mf.open('output/%s/track%s.midi' % (self.style, i), attrib='wb')
-            mf.write()
-            mf.close()
-
         self.network.save()
-
+        self.artist.save()
 
 
     def train(self, n=1, *args):
         """ Train the network on the compositions n amount of times """
         self.verbose('Training...')
-        for _ in range(int(n)):
-            self.network.train()
+        training_data = self.artist.training_data
+        for i in range(int(n)):
+            self.verbose('Session %4d' % i)
+            self.network.train(training_data)
 
 
-    def compose(self, length=50, n=1, *args):
+    def compose(self, n=1, *args):
         """ Compose """
         self.verbose('Composing...')
-
-        for _ in range(int(n)):
-            compositions = self.network.compose(int(length))
-            for composition in compositions:
-                self.compositions.append(composition)
+        for i in range(int(n)):
+            self.verbose('Composition %4d:' % i)
+            data = self.artist.compose(self.network)
+            self.verbose('\tKey: %s\n\tScale: %s\n\tProgression: %s\n\tNotes: %s' % data)
 
 
 
     def print(self, *args):
         """ Internal use for debug purposes """
         self.verbose('Printing...')
-        with open('debug/concepts/%s.txt'%self.style, 'w') as f:
-            print( D.datetime.now().strftime('%d %b %H:%M') + ('#'*80).join( map(str, self.network.opus) ), file=f )
+        print(*args)
 
 
     def quit(self, *args):

@@ -1,152 +1,195 @@
 """
+Handles music theory side of things
+
 """
+
+from glob import glob
 
 import numpy as np
 import music21 as mu
+mu.chord.Chord.priority = 15  # Should come before notes (20)
 
-class ConceptTable():
+from src.concepts import conceptualize, encode, decode, START, STOP
 
-    def __init__(self, scores):
+class Song():
 
-        self.sequences = [ [ pitches[0].pitchClass for pitches in score.melody ] for score in scores ]
-        self.pointers = { i: { j: [] for j in range(12) } for i in range(12) }
+    def __init__(self, song):
+        self.song = song
+        self.composition = mu.converter.parse(song)
 
-        for i, melody in enumerate(self.sequences):
-            for j, note in enumerate(melody[:-1]):
-                self.pointers[note][melody[j+1]].append((i,j))
+        for part in self.composition:
+            key = part.analyze('key')
+            if str(key) in ('C major', 'a minor'):
+                continue
+
+            if 'minor' in str(key):
+                key = key.relative
+
+            toC = -key.tonic.pitchClass
+            part.transpose(toC, inPlace=True)
+
+        self.key = self.composition.analyze('key')
+
+    @property
+    def notes(self):
+        return [ [ note for note in part if isinstance(note, mu.note.Note) ] for part in self.composition.parts ]
+
+    @property
+    def chords(self):
+        return [ [ chord for chord in part if isinstance(chord, mu.chord.Chord) ] for part in self.composition.parts ]
+
+    @property
+    def data(self):
+        return [ note for note in self.composition.flat.notesAndRests ]
 
 
-    def match(self, fr, to):
-        indices = self.pointers[fr][to]
-        return [ self.sequences[i][j:j+4] for i, j in indices ]
+    @property
+    def noteChordPairings(self):
+        last_chord = mu.chord.Chord(mu.harmony.ChordSymbol('C'))
+        pairings = [ [[],last_chord.normalOrderString] ]
+
+        for note in self.data:
+            if isinstance(note, mu.note.Rest):
+                pairings.append([[], ''])
+
+            elif isinstance(note, mu.note.Note):
+                pairings[-1][0].append(note.name)
+
+            elif isinstance(note, mu.chord.Chord):
+                if note.normalOrderString != last_chord.normalOrderString:
+                    pairings.append([[], last_chord.normalOrderString])
+                last_chord = note
+
+        return pairings
 
 
 
-
-def conceptualize(scores):
-
-    table = ConceptTable(scores)
-    return table
+class Artist():
 
 
+    def __init__(self, artist=None):
+        if artist:
+            self.init(artist)
 
-class Composition():
+    def init(self, artist):
+        self.artist = artist
 
-    def __init__(self):
+        self.works = [ Song(f) for f in glob('data/%s/*.midi' % artist) ]
+        self.compositions = [ mu.converter.parse(f) for f in glob('output/%s/*.midi' % artist) ]
 
-        self.harmony = Harmony()
-        self.melody  = Melody()
+        self.analysis = conceptualize(self)
+
+    def load(self, artist):
+        #TODO
+        self.init(artist)
+
+    def save(self):
+        for i,comp in enumerate(self.compositions):
+            mf = mu.midi.translate.streamToMidiFile(comp)
+            mf.open('output/%s/track%d.midi' % (self.artist, i), 'wb')
+            mf.write()
+            mf.close()
+
+
+    def add(self, compositions):
+        self.compositions += compositions
+
 
     def compose(self, network):
-        self.harmony.__init__()
-        self.melody.__init__()
 
-        return self.score(network)
+        key = self.analysis.randomKey()
+        pairings = []
 
-    def score(self, network):
+        for chord in self.analysis.randomChordProgression(key, 4):
+            #starting_note = mu.note.Note(self.analysis.randomFirstNote(chord)).pitch.pitchClass
+            starting_note = encode(START)
 
-        sc = mu.stream.Score()
+            melody = network.predict(starting_note, 50)
+            chord = mu.chord.Chord([ int(p, 16) for p in chord[1:-1] ])
 
-        har = mu.stream.Part()
-        har.insert(mu.instrument.Piano())
+            pairings.append((chord, melody))
+
+        print(pairings)
+
+        score = mu.stream.Score()
+        score.insert(mu.key.Key(key))
 
         mel = mu.stream.Part()
         mel.insert(mu.instrument.Trumpet())
 
-        har.append(self.harmony.progression())
-        mel.append(self.melody.sequence(self.harmony, network))
+        har = mu.stream.Part()
+        har.insert(mu.instrument.Guitar())
 
-        sc.insert(har)
-        sc.insert(mel)
+        for chord, melody in pairings:
+            har.append(chord)
+            for note in melody:
+                if note == 12:
+                    note = mu.note.Rest()
+                else:
+                    note = mu.note.Note(note)
+                mel.append(note)
 
-        sc.show('t')
-        return sc
+        score.insert(har)
+        score.insert(mel)
 
+        self.compositions.append(score)
+        return key, score.analyze('key'), [ chord for chord, melody in pairings ], set([note for chord, melody in pairings for note in melody])
 
+    @property
+    def training_data(self):
+        seq_len = 50
 
-class Melody():
+        data = []
+        for part in [ p for song in self.works for p in song.composition.parts ]:
 
-    def __init__(self):
-        pass
+            long_sequence = list(part.flat.notesAndRests)
+            sequence = [encode(START)]
+            for n in long_sequence:
+                if isinstance(n, mu.note.Rest) and n.duration.quarterLength < 4:
+                    continue
 
-    def sequence(self, harmony, network):
+                sequence.append(encode(n))
+            sequence.append(encode(STOP))
 
-        sequence = network.generateMelody(harmony, self)
-        print(sequence)
+            n = len(sequence)
+            dX = [ sequence[i:i+seq_len] for i in range(n - seq_len) ]
+            dY = [ sequence[i+seq_len] for i in range(n - seq_len) ]
 
-        ns = mu.stream.Voice()
-        for note in sequence:
-            ns.append(mu.note.Note(note, quarterLength=max(.25, 32/len(sequence))))
+            dataX = [ [ [ i in k for i in range(15) ] for k in sdx ] for sdx in dX ]
+            dataY = [ [ i in k for i in range(15) ] for k in dY ]
 
-        return ns
+            x = np.reshape(dataX, (len(dataX), seq_len, 15))
+            y = np.reshape(dataY, (len(dataY), 1, 15))
 
+            data.append((x,y))
 
-class Harmony():
+        return data
 
-    # Chords
-    A_MINOR = [ 'C', 'Dm', 'E7', 'F', 'G', 'Am' ]
-    C_MAJOR = [ 'C', 'E7', 'F', 'G', 'Am' ]
-    F_MAJOR = [ 'C', 'Em', 'F', 'G7', 'Am', 'B-' ]
-    G_MAJOR = [ 'C', 'D', 'Em', 'G', 'Am', 'Bm' ]
-    CHORDS = [ A_MINOR, C_MAJOR, F_MAJOR, G_MAJOR ]
-
-
-    # Rythym
-    STACCATO = 0
-    LEGATO = 1
-    RYTHYM = [ STACCATO, LEGATO ]
-
-    def __init__(self):
-
-        self.rythym_type = np.random.choice(Harmony.RYTHYM, p=[.6, .4])
-
-        d = list(range(16))
-        np.random.shuffle(d)
-        self.rythym_db = sorted(d[: np.random.randint(5,9) ])
-
-        chord_set = np.random.choice([ i for i,k in enumerate(Harmony.CHORDS)])
-        self.chord_set = Harmony.CHORDS[chord_set]
-
-        self._progression = None
+    @property
+    def data(self):
+        return [ song.data for song in self.works ]
 
 
-    def randomProgression(self):
-        return np.random.choice( self.chord_set, np.random.randint(4, 7) )
+    @property
+    def notes(self):
+        return [ song.notes for song in self.works ]
 
-    def randomStartingNote(self, chord):
+    @property
+    def uniqueNotes(self):
+        return { note.name for sequence in self.notes for note in sequence }
 
-        chord = mu.chord.Chord(mu.harmony.ChordSymbol(chord))
-        return chord.root().pitchClass
+    @property
+    def chords(self):
+        return [ song.chords for song in self.works ]
 
-    def progression(self):
-        if not self._progression:
-            self._progression = self.randomProgression()
+    @property
+    def uniqueChords(self):
+        return { chord.normalOrderString for progression in self.chords for chord in progression }
 
+    @property
+    def keys(self):
+        return [ song.key for song in self.works ]
 
-        duration = [ (n-p) for p,n in zip(self.rythym_db, self.rythym_db[1:] + [16]) ]
-
-        cp = mu.stream.Voice()
-        for chord in self._progression:
-
-            if self.rythym_type == Harmony.LEGATO:
-                pitches = mu.harmony.ChordSymbol(chord).pitches
-                notes = [ p for p in np.random.choice(pitches, len(self.rythym_db)) ]
-
-                for n,d in zip(notes, duration):
-                    cp.append(mu.note.Note(n, quarterLength=d/16))
-
-            else:
-                for d in duration:
-                    cp.append(mu.chord.Chord(mu.harmony.ChordSymbol(chord), quarterLength=max(.25, d/16)))
-
-
-        return cp
-
-
-    def __len__(self):
-        return len(self._progression)
-
-    def __iter__(self):
-        return iter(self._progression)
-
-
+    @property
+    def uniqueKeys(self):
+        return { (key.tonic, key.mode) for key in self.keys }

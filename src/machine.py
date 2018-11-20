@@ -4,18 +4,16 @@
 import re, json
 
 import numpy as np
-np.random.seed(73)
+#np.random.seed(73)
 
 from keras.models import Sequential, model_from_json
-from keras.layers import Input, Dense, Activation, LSTM, TimeDistributed, Flatten, Reshape
-
+from keras.layers import Input, Dense, Activation, LSTM, TimeDistributed, Flatten, Reshape, Dropout
+from keras.callbacks import ModelCheckpoint
 
 from itertools import groupby, zip_longest
 import music21 as mu
 
-from src.concepts import Opus
-from src.music import Composition
-
+from src.concepts import encode, decode, START, STOP
 
 class Network():
 
@@ -27,43 +25,38 @@ class Network():
     def __init__(self, style='default'):
         self.style = style
 
-
-    def save(self):
-        with open('data/%s/opus.json' % self.style, 'w') as f:
-            f.write(self.opus.toJSON())
-
-        self.melody.save_weights('%s.melody.h5' % self.style)
-        self.harmony.save_weights('%s.harmony.h5' % self.style)
-
-
-    def init(self, collection):
-        self.opus = Opus(collection)
-        self.prepare()
-
-
-    def prepare(self):
         HIDDEN_DIM = 500
-        LAYER_NUM = 2
+        LAYER_NUM = 3
+        NUM_NOTES = 15  # 12 notes, Rest, START, END
 
         self.melody = Sequential()
-        self.melody.add(LSTM(HIDDEN_DIM, input_shape=(None, self.opus.numNotes), return_sequences=True))
-        for _ in range(LAYER_NUM):
-            self.melody.add(LSTM(HIDDEN_DIM, return_sequences=True))
-        self.melody.add(TimeDistributed(Dense(self.opus.numNotes)))
+        self.melody.add(LSTM(HIDDEN_DIM, input_shape=(None, NUM_NOTES), return_sequences=True))
         self.melody.add(Activation('softmax'))
-        self.melody.compile(loss='categorical_crossentropy', optimizer='rmsprop')
+        self.melody.add(Dense(NUM_NOTES))
+
+        self.melody.compile(loss='categorical_crossentropy', optimizer='adam')
+
+
+        filepath= style + "-melody-{epoch:02d}-{loss:.4f}.hdf5"
+        checkpoint=ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
+        self.callbacks = [checkpoint]
 
         # TODO Harmony
         self.harmony = Sequential()
 
+
+    def init(self, *args):
+        self.__init__(*args)
+
+
+
+    def save(self):
+        self.melody.save_weights('%s.melody.h5' % self.style)
+        self.harmony.save_weights('%s.harmony.h5' % self.style)
+
+
     def load(self, style):
         self.style = style
-
-        with open('data/%s/opus.json' % self.style, 'r') as f:
-            self.opus = Opus([])
-            self.opus.fromJSON(f.read())
-
-        self.prepare()
 
         try:
             self.melody.load_weights('%s.melody.h5' % self.style)
@@ -72,64 +65,28 @@ class Network():
             print('There was a problem loading the model weights.')
 
 
-    def train(self, *args):
 
-        SEQ_LENGTH = 50
+    def prepare(self):
+        ...
 
-        for melody in self.opus.melodies:
-            data = [ pitches[0].pitchClass for pitches in melody ]
-            if len(data) == 0:
-                continue
-
-            x = np.zeros((len(melody)//SEQ_LENGTH, SEQ_LENGTH, self.opus.numNotes))
-            y = np.zeros((len(melody)//SEQ_LENGTH, SEQ_LENGTH, self.opus.numNotes))
-
-            for i in range(len(melody)//SEQ_LENGTH):
-                x_seq = data[i*SEQ_LENGTH : (i+1)*SEQ_LENGTH]
-                x_seq_ix = [ self.opus.note_to_index[ note ] for note in x_seq ]
-
-                y_seq = data[i*SEQ_LENGTH+1 : (i+1)*SEQ_LENGTH + 1]
-                y_seq_ix = [ self.opus.note_to_index[ note ] for note in y_seq ]
-
-                ip_seq = np.zeros((SEQ_LENGTH, self.opus.numNotes))
-                tg_seq = np.zeros((SEQ_LENGTH, self.opus.numNotes))
-
-                for j in range(SEQ_LENGTH):
-                    ip_seq[j][ x_seq_ix[j] ] = 1
-                    tg_seq[j][ y_seq_ix[j] ] = 1
-
-                x[i] = ip_seq
-                y[i] = tg_seq
-
-            self.melody.fit(x, y, batch_size=50, verbose=1, epochs=20)
-
-        self.save()
+    def train(self, td):
+        for x,y in td:
+            self.melody.fit(x, y, batch_size=10, verbose=1, epochs=10, callbacks=self.callbacks )
+            self.save()
 
 
-    def generateMelody(self, harmony, melody):
-        ix = []
-        x = np.zeros((len(harmony),50,self.opus.numNotes))
+    def predict(self, starting_note, n):
 
-        for i,chord in enumerate(harmony):
-            ix.append(harmony.randomStartingNote(chord))
-            for j in range(50):
-                x[i, j, :][ix[-1]] = 1
-                pred = self.melody.predict(x[:, :j+1, :])[0]
+        ix = [ encode(START) ]
+        x = np.zeros((1, n, 15))
 
-                next_prediction = pred[0]
-                sum_probabilities = sum(next_prediction)
+        for i in range(n):
+            x[0, i, :][ix[-1]] = 1
 
-                rand_value = np.random.choice(next_prediction, p=[ _p/sum_probabilities for _p in next_prediction ])
-                jx = np.where(next_prediction == rand_value)
-                ix.append(jx[0][0])
+            pred = self.melody.predict(x[:, :i+1, :])
+            ix.append(np.argmax(pred))
+            if ix[-1] == encode(STOP):
+                break
 
-        y = [ self.opus.index_to_note[ix_k] for ix_k in ix ]
-        return y
-
-    def compose(self, length=50, n=1, *args):
-        composition = Composition()
-        return [ composition.compose(self) for _ in range(int(n)) ]
-
-
-
-
+        melody = ix
+        return melody

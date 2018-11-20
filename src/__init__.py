@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from src.control import Manager
 
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+#os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 
 class UserInterface(ArgumentParser):
@@ -37,7 +37,7 @@ class UserInterface(ArgumentParser):
         print('\n> ', end='')
 
         try:
-            command = [ c.strip() for c in input().split(',') ]
+            command = [ c.strip() for c in input().split(';') ]
             print()
             for c in command:
                 user_input = self.parse_args(c.split(' '))
