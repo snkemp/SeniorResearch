@@ -8,7 +8,9 @@ from music21.midi import MidiFile
 from music21.midi.translate import streamToMidiFile, midiFileToStream
 
 from src.machine import Network
-from src.music import Artist
+from src.music import Artist, Composition
+
+import code
 
 class Manager():
 
@@ -20,19 +22,22 @@ class Manager():
         """ Create a network to handle machine learning and a collection to handle musical data """
 
         self.args = args
-        self.network = Network()
-        self.artist = Artist()
 
+        self.artist = Artist()
+        self.network = Network()
+
+    def clear(self, *arg):
+        os.system('clear')
 
     def execute(self, *args):
         """ Execute python script of args """
-        # TODO
-        print(args)
+        self.verbose('\aPython:')
+        code.interact(local=locals())
 
 
     def make(self, *args):
         self.load()
-        self.compose()
+        self.execute()
         self.save()
 
     def create(self, style='toh-kay', *args):
@@ -62,17 +67,16 @@ class Manager():
         self.style = style.lower()
         self.verbose('Initializing %s...' % self.style)
 
-        self.network.init(self.style)
         self.artist.init(self.style)
+        self.network.init(self.artist)
 
     def load(self, style='toh-kay', *args):
         """ Load previously saved data with respect to the given style """
         self.style = style.lower()
         self.verbose('Loading %s...' % self.style)
 
-        self.network.load(self.style)
         self.artist.load(self.style)
-
+        self.network.load(self.style)
 
     def save(self, *args):
         """ Save network progress and all compositions """
@@ -85,20 +89,27 @@ class Manager():
     def train(self, n=1, *args):
         """ Train the network on the compositions n amount of times """
         self.verbose('Training...')
-        training_data = self.artist.training_data
         for i in range(int(n)):
-            self.verbose('Session %4d' % i)
-            self.network.train(training_data)
+            self.verbose('Session %2d' % i)
+            self.network.train(*args)
+
+    def generate(self, n=1):
+        for x in self.compose(n):
+            if self.args.verbose:
+                x.score.show('t')
+                self.verbose('\a')
 
 
     def compose(self, n=1, *args):
         """ Compose """
         self.verbose('Composing...')
         for i in range(int(n)):
-            self.verbose('Composition %4d:' % i)
-            data = self.artist.compose(self.network)
-            self.verbose('\tKey: %s\n\tScale: %s\n\tProgression: %s\n\tNotes: %s' % data)
-
+            self.verbose('Composition %2d:' % i)
+            composition = Composition(self.artist, self.network)
+            self.artist.add(composition)
+            self.verbose(str(composition))
+            yield composition
+        return
 
 
     def print(self, *args):
@@ -127,7 +138,7 @@ class Manager():
 
 
     def error(self, msg, *args):
-        print('Error: %s' % msg)
+        print('\aError: %s' % msg)
         if args:
             print(*args)
 

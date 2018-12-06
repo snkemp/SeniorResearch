@@ -40,8 +40,12 @@ class UserInterface(ArgumentParser):
             command = [ c.strip() for c in input().split(';') ]
             print()
             for c in command:
+                if not c:
+                    c = 'clear'
+
                 user_input = self.parse_args(c.split(' '))
                 getattr(self.manager, user_input.command)(*user_input.arguments)
+
 
         except EOFError: # CTRL + D
             self.manager.exit('Closing Mugen')
@@ -49,16 +53,14 @@ class UserInterface(ArgumentParser):
         except KeyboardInterrupt:  # CTRL + C
             self.manager.error('Process ended')
 
-        except FileExistsError:  # Creation error
-            self.manager.error('We already created that file. Doing so again will delete all our saved data')
-
-        except StopIteration:  #
+        except StopIteration:
             # print_exc()
             self.manager.exit('Closing Mugen')
             raise
 
         except Exception:
             print_exc()
+            print('\a')
 
 
 
@@ -82,4 +84,6 @@ def main():
 
     for command in ui:
         pass
+
+    print('Goodbye')
 

@@ -6,14 +6,21 @@ import re, json
 import numpy as np
 #np.random.seed(73)
 
-from keras.models import Sequential, model_from_json
-from keras.layers import Input, Dense, Activation, LSTM, TimeDistributed, Flatten, Reshape, Dropout
+from keras.models import Sequential, load_model
+from keras.layers import Input, Dense, Activation, LSTM, TimeDistributed, Flatten, Reshape, Dropout, Embedding
 from keras.callbacks import ModelCheckpoint
 
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import TimeseriesGenerator
+from keras.utils import to_categorical
+
 from itertools import groupby, zip_longest
+
 import music21 as mu
 
-from src.concepts import encode, decode, START, STOP
+import json
+
+
 
 class Network():
 
@@ -22,71 +29,80 @@ class Network():
     Handles loading and saving different styles for the model
     """
 
-    def __init__(self, style='default'):
-        self.style = style
+    def __init__(self):
+        pass
 
-        HIDDEN_DIM = 500
-        LAYER_NUM = 3
-        NUM_NOTES = 15  # 12 notes, Rest, START, END
+    def init(self, artist):
+        notes = artist.notes
 
-        self.melody = Sequential()
-        self.melody.add(LSTM(HIDDEN_DIM, input_shape=(None, NUM_NOTES), return_sequences=True))
-        self.melody.add(Activation('softmax'))
-        self.melody.add(Dense(NUM_NOTES))
+        seq_len = 100
 
-        self.melody.compile(loss='categorical_crossentropy', optimizer='adam')
+        int_to_note = sorted(set(notes))
+        note_to_int = { k: i for i,k in enumerate(int_to_note)}
 
+        num_notes = len(int_to_note)
 
-        filepath= style + "-melody-{epoch:02d}-{loss:.4f}.hdf5"
-        checkpoint=ModelCheckpoint(filepath, monitor='loss', verbose=1, save_best_only=True, mode='min')
-        self.callbacks = [checkpoint]
+        x = []
+        y = []
 
-        # TODO Harmony
-        self.harmony = Sequential()
+        for i in range(len(notes) - seq_len):
+            xseq = notes[i:i+seq_len]
+            yseq = notes[i+seq_len]
 
-
-    def init(self, *args):
-        self.__init__(*args)
+            x.append([ note_to_int[n] for n in xseq])
+            y.append(note_to_int[yseq])
 
 
+        n_patterns = len(x)
 
-    def save(self):
-        self.melody.save_weights('%s.melody.h5' % self.style)
-        self.harmony.save_weights('%s.harmony.h5' % self.style)
+        self.x = np.reshape(x, (n_patterns, seq_len, 1)) #/ num_notes
+        self.y = to_categorical(y)
 
+        self.model = Sequential()
+        self.model.add(LSTM(512, input_shape=(self.x.shape[1],self.x.shape[2]), return_sequences=True))
+        self.model.add(Dropout(.2))
+        self.model.add(LSTM(512, return_sequences=True))
+        self.model.add(Dropout(.3))
+        self.model.add(LSTM(512))
+        self.model.add(Dense(256))
+        self.model.add(Dropout(.2))
+        self.model.add(Dense(num_notes))
+        self.model.add(Activation('softmax'))
 
-    def load(self, style):
-        self.style = style
+        self.model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
 
-        try:
-            self.melody.load_weights('%s.melody.h5' % self.style)
-            self.harmony.load_weights('%s.harmony.h5' % self.style)
-        except:
-            print('There was a problem loading the model weights.')
-
-
-
-    def prepare(self):
-        ...
-
-    def train(self, td):
-        for x,y in td:
-            self.melody.fit(x, y, batch_size=10, verbose=1, epochs=10, callbacks=self.callbacks )
-            self.save()
+        self.int_to_note = int_to_note
+        self.note_to_int = note_to_int
 
 
-    def predict(self, starting_note, n):
+    def train(self, e=20, b=64, *args):
+        self.model.fit(self.x, self.y, epochs=int(e), batch_size=int(b), verbose=1)
+        self.save()
 
-        ix = [ encode(START) ]
-        x = np.zeros((1, n, 15))
+    def predict(self, sequence):
+        start = self.note_to_int['START']
 
-        for i in range(n):
-            x[0, i, :][ix[-1]] = 1
+        Z = np.array([start for _ in range(100)]).reshape((1,100,1))
+        Z[0, -len(sequence):, 0] = [ self.note_to_int[str(s)] for s in sequence ]
 
-            pred = self.melody.predict(x[:, :i+1, :])
-            ix.append(np.argmax(pred))
-            if ix[-1] == encode(STOP):
-                break
+        prediction = self.model.predict(Z)
+        y = np.argmax(prediction)
+        if self.int_to_note[y] == sequence[-1]:
+            prediction[0][y] = 0
+            y = np.argmax(prediction)
+        return self.int_to_note[np.argmax(prediction)]
 
-        melody = ix
-        return melody
+    def save(self, s='toh-kay'):
+        self.model.save('%s.h5' % s)
+        data = { 'encode': self.note_to_int, 'decode': self.int_to_note }
+        with open('data.%s.json' % s, 'w') as f:
+            json.dump(data, f)
+
+    def load(self, s='toh-kay'):
+        self.model = load_model('%s.h5' % s)
+        with open('data.%s.json' % s, 'r') as f:
+            data = json.load(f)
+            self.note_to_int = data['encode']
+            self.int_to_note = data['decode']
+
+

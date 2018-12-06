@@ -2,152 +2,255 @@ import re
 from collections import Counter
 
 import numpy as np
-
 import music21 as mu
+mu.chord.Chord.priority = 15  # Should always come before notes played at same time
 
-START = '[START]'
-STOP = '[STOP]'
+START = '>'
+STOP = '!'
 
-def encode(note):
-    if isinstance(note, mu.note.Note) or isinstance(note, mu.chord.Chord):
-        return [ p.pitchClass for p in note.pitches ]
-    elif isinstance(note, mu.note.Rest):
-        return [12]
-    elif note == START:
-        return [13]
-    elif note == STOP:
-        return [14]
-    else:
-        raise Exception('Cant encode illegal argument: %s' % str(note))
+class ScoreProperties():
+    """
+    Get all properties of the score after transposing to C
+
+    1. Key - use music21 analyze
+    2. Chords:
+        What chords
+        What chords follow other chords
+    3. Notes:
+        What notes
+        What notes played during a chord
+        What notes follow other notes
+    4. Durations:   N/A
+        What durations
+        What durations follow other durations
+    """
+
+    def __init__(self, score):
+
+        for part in score.parts:
+            if part.partName in ('Piano', 'Electric Organ', 'Drums'):
+                score.remove(part)
+                continue
+
+            key = part.analyze('key')
+            if 'minor' in str(key):
+                key = key.relative
+            part.transpose(-key.tonic.pitchClass, inPlace=True)
+            part.chordify()
+
+        self.score = score
+        self.key = str(self.score.analyze('key'))
+
+        self.chords = Counter()
+        self.chord_graph = {'': Counter()}
+
+        self.notes = Counter()
+        self.note_graph = {'': Counter()}
+
+        self.notes_in_chord = {'': Counter()}
+
+        # Pass on durations
+
+        # Valid chords
+        #         C         Dm      Em       E        F        G         Am
+        valid = { '0.4.7', '2.5.9', '2.5.7', '2.5.8', '0.5.9', '2.7.11', '0.4.9' }
+
+        last_chord = ''
+        last_note = ''
+        for element in self.score.chordify().notesAndRests:
+            if isinstance(element, mu.note.Rest):
+                last_chord = ''
+                last_note = ''
+
+            elif isinstance(element, mu.note.Note):
+                e = element.pitchClass
+                self.notes.update([e])
+                self.note_graph[last_note].update([e])
+                self.notes_in_chord[last_chord].update([e])
+                last_note = e
+                if e not in self.note_graph:
+                    self.note_graph[e] = Counter()
+
+            elif len(element.normalOrder) < 3:
+                e = [str(p) for p in element.normalOrder]
+                self.notes.update(e)
+                self.note_graph[last_note].update(e)
+                self.notes_in_chord[last_chord].update(e)
+                last_note = e[0]
+                if e[0] not in self.note_graph:
+                    self.note_graph[e[0]] = Counter()
+
+            elif len(element.normalOrder) == 3:
+                e = '.'.join([str(p) for p in sorted(element.normalOrder)])
+                if e in valid:
+                    self.chords.update([e])
+                    self.chord_graph[last_chord].update([e])
+                    last_chord = e
+                    if e not in self.chord_graph:
+                        self.chord_graph[e] = Counter()
+                        self.notes_in_chord[e] = Counter()
 
 
-def decode(note):
-    if note < 0:
-        raise Exception('Cannot decode illegal argument: %s' % str(note))
-    elif note < 12:
-        return mu.note.Note(note)
-    elif note == 12:
-        return mu.note.Rest()
-    elif note == 13:
-        return START
-    elif note == 14:
-        return STOP
-    raise Exception('Cannot decode illegal argument: %s' % str(note))
+        for note in self.note_graph:
+            del self.note_graph[note][note]
+
+        for chord in self.chord_graph:
+            del self.chord_graph[chord][chord]
+
+
+    @property
+    def first_chords(self):
+        return self.chord_graph[''] + self.chords[max(self.chords)]
+
+    @property
+    def first_notes(self):
+        return self.note_graph[''] + self.notes[max(self.notes)]
 
 
 class Analysis():
 
-    def __init__(self, *args):
-        self.chords_in_key, self.notes_during_chord, self.chord_graph, self.first_chords, self.note_graph, self.first_notes, *rest = args
+    """ Merge score properties into one analysis """
+    def __init__(self):
+        self.score_properties = []
 
-    def __str__(self):
-        return '\n'.join([
-            'Keys:  \t' + str(self.chords_in_key),
-            'Chords:\t' + str(self.chord_graph),
-            'Notes: \t' + str(self.note_graph)
-            ])
+    def load(self, artist):
+        pass
+
+    def init(self, scores):
+        self.score_properties = [ ScoreProperties(sc) for sc in scores ]
+
+    def __iter__(self):
+        return iter(self.score_properties)
 
 
+    """ Random choices """
+
+    def randomElementFromCounter(self, counter, n=10):
+        elements, appearences = zip(*counter.most_common(n))
+        p = sum(appearences)
+        return np.random.choice(elements, p=[a/p for a in appearences])
 
 
     def randomKey(self):
-        return np.random.choice(list(self.chords_in_key.keys()))
+        return self.randomElementFromCounter(self.keys)
 
-    def randomFirstChord(self, key):
-        valid_chords = set(self.chords_in_key[key].keys()) & self.first_chords & set(self.chord_graph.keys())
-        return np.random.choice(list(valid_chords))
+    def randomMode(self, key):
+        return self.randomElementFromCounter(self.modes_in_key[key])
 
-    def randomChordProgression(self, key, n=20):
-        starting_chord = self.randomFirstChord(key)
-        curr_chord = starting_chord
+    def randomChord(self, key):
+        return self.randomElementFromCounter(self.chords_in_key[key])
 
-        for _ in range(n):
-            yield curr_chord
-
-            if curr_chord not in self.chord_graph:
-                curr_chord = self.randomFirstChord(key)
-
-            chords = list(self.chord_graph[curr_chord].elements())  # [ 'C', 'C', 'G' ... ] Duplicates are in there so probablities are inherent
-            curr_chord = np.random.choice(chords)
-
-        return curr_chord
+    def randomChordProgression(self, key, mode=0, length=np.random.randint(4,8)):
+        progression = [self.randomChord(key)]
+        chord_graph = self.chord_graph
+        for _ in range(length-1):
+            last = progression[-1]
+            progression.append(self.randomElementFromCounter(chord_graph[last]))
+        return progression
 
 
-    def randomFirstNote(self, chord):
-        valid_notes = set(self.notes_during_chord[chord].keys()) & self.first_notes & set(self.note_graph.keys())
-        return np.random.choice(list(valid_notes))
+    def randomNote(self, chord):
+        if chord in self.notes_in_chord:
+            return self.randomElementFromCounter(self.notes_in_chord[chord])
+        else:
+            return np.random.choice(chord.split('.'))
+
+    def samples(self):
+        return [ [ [pitch.pitchClass for pitch in n.pitches] for n in part.chordify().notes] for sc in self for part in sc.score.parts ]
+
+
+    def smooth(self, note, bad):
+        if bad in self.note_graph[note]:
+            return [bad]
+        else:
+            transition = []
+            for n in self.note_graph:
+                if bad in self.note_graph[note]:
+                    return [ n, bad, self.randomElementFromCounter(self.note_graph[note]) ]
+        return self.randomElementFromCounter(self.note_graph[note])
 
 
 
+    """ Properties """
 
-def conceptualize(artist):
+    @property
+    def keys(self):
+        return Counter([sp.key for sp in self])
+
+    @property
+    def modes_in_key(self):
+        return self.key_counters([ (sp.key, sp.first_notes) for sp in self ])
+
+    @property
+    def notes(self):
+        return self.merge_counters([sp.notes for sp in self])
+
+    @property
+    def note_graph(self):
+        return self.graph([sp.note_graph for sp in self])
+
+    @property
+    def notes_in_chord(self):
+        return self.key_counters([ (key,counter) for sp in self for key,counter in sp.notes_in_chord.items() ])
+
+    @property
+    def chords(self):
+        return self.merge_counters([sp.chords for sp in self])
+
+    @property
+    def chords_in_key(self):
+        return self.key_counters([ (sp.key, sp.chords) for sp in self ])
+
+    @property
+    def chord_graph(self):
+        return self.graph([sp.chord_graph for sp in self])
+
+
+    """ Decided against
+    @property
+    def durations(self):
+        return self.merge_counters([sp.durations for sp in self])
+
+    @property
+    def duration_graph(self):
+        return self.graph([sp.duration_graph for sp in self])
+
     """
-    Given an artist we want to find out a few things
 
-    1. Find chords played in a key
-    2. Find notes played in a key
-    2. Find the set of notes played during each chord and how often
-    3. Create chord graph
-    4. Create note graph
-    """
+    """ Helpers """
 
-    chord_in_key = {}
+    def merge_counters(self, counters):
+        total = Counter()
+        for counter in counters:
+            total += counter
+        return total
 
-    notes_during_chord = {}
+    def key_counters(self, pairs):
+        mapping = {}
+        for key, counter in pairs:
+            if len(counter):
+                if key not in mapping:
+                    mapping[key] = counter
+                else:
+                    mapping[key] += counter
+        return mapping
 
-    chord_graph = {}
-    first_chords = set()
-
-    note_graph = {}
-    first_notes = set()
-
-
-    for song in artist.works:
-
-
-        # 1
-        key = song.key.tonicPitchNameWithCase
-        if not key in chord_in_key:
-            chord_in_key[key] = Counter()
-        chord_in_key[key] += Counter([chord.normalOrderString for part in song.chords for chord in part])
-
-
-        # 2
-        for notes, chord in song.noteChordPairings:
-            if chord not in notes_during_chord:
-                notes_during_chord[chord] = Counter()
-
-            notes_during_chord[chord] += Counter(notes)
-
-        # 3
-        for progression in song.chords:
-            if not progression:
-                continue
-
-            last = progression[0].normalOrderString
-            first_chords |= {last}
-            for chord in progression[1:]:
-                chord = chord.normalOrderString
-
-                if last not in chord_graph:
-                    chord_graph[last] = Counter()
-                chord_graph[last] += Counter([chord])
-                last = chord
-
-        # 4
-        for melody in song.notes:
-            if not melody:
-                continue
-
-            last = melody[0].name
-            first_notes |= {last}
-            for note in melody[1:]:
-                note = note.name
-
-                if last not in note_graph:
-                    note_graph[last] = Counter()
-                note_graph[last] += Counter([note])
-                last = note
+    def graph(self, graphs):
+        total = {}
+        for graph in graphs:
+            for node in graph:
+                if node not in total:
+                    total[node] = graph[node]
+                else:
+                    total[node].update(graph[node])
+        return total
 
 
-    return Analysis(chord_in_key, notes_during_chord, chord_graph, first_chords, note_graph, first_notes)
+
+    def fromJSON(self, _json):
+        pass
+
+    def toJSON(self):
+        pass
+
+
